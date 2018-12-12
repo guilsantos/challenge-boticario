@@ -1,31 +1,44 @@
-# Quero trabalhar na Boticário: Front-End
-Desenvolver uma aplicação HTML5 + CSS3 + JS
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Instruções
-- Faça um fork desse projeto para a sua conta pessoal do GitHub, ou BitBucket.
-- Siga as especificações abaixo.
-- Crie um README com as instruções para compilar, testar e rodar o projeto.
-- O link do repositório deverá ser enviado para o e-mail osni.junior@grupoboticario.com.br com o título **Teste Front-End**
+## Available Scripts
 
-## Especificações técnicas
-- Utilizar HTML5, CSS3 e JS (Vanilla, jQuery, Vue ou React... Fica a seu critério)
-- Mobile first e responsivo
+In the project directory, you can run:
 
-## A missão
-Desenvolver uma página, baseando-se no wireframe abaixo (PSD e PNG na pasta assets):
-![boticario](assets/eCommerce-Template.png)
+### `npm start`
 
-Hover mini cart:
-![boticario](assets/hover-eCommerce-PSD-Template.png)
+Runs the app in the development mode.<br>
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-- Os produtos precisam ser consumidos de um .json (está na pasta assets) via ajax.
-- Ao clicar no produto, o mesmo deve ser adicionado ao carrinho.
-- Último e não menos importante, deixe sua imaginação fluir.
+The page will reload if you make edits.<br>
+You will also see any lint errors in the console.
 
-## O que será avaliado?
-- Semântica Web
-- Organização do código
-- Lógica do código
-- Uso do Git
-- Documentação
-- Automação de tarefas (Gulp? Grunt? Webpack? :D)
+### `npm test`
+
+Launches the test runner in the interactive watch mode.<br>
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+### `npm run build`
+
+Builds the app for production to the `build` folder.<br>
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.<br>
+Your app is ready to be deployed!
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `npm run eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
