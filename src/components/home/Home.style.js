@@ -14,10 +14,12 @@ export const ShopTitle = styled.a`
     border-right: #EBEBEB solid;
     padding: 12px 24px;
     text-decoration: none;
+    color: black;
 `
 
 export const Categories = styled.a`
     font-size: 18px;
     text-decoration: none;
     padding: 24px;
+    color: grey;
 `
