@@ -4,13 +4,12 @@ import {
   withProps,
   withHandlers,
   setPropTypes,
-  pure,
   lifecycle,
   withState
 } from 'recompose'
 import axios from 'axios'
-import productsList from '../../services/products'
-import { TopBar, Categories, ShopTitle } from './Home.style'
+import { Wrapper, TopBar, Categories, ShopTitle, BodyTitle } from './Home.style'
+import { MASKED as HOME } from './Home.messages'
 
 const URL = "products.json"
 
@@ -25,15 +24,16 @@ const enhancer = compose(
 )
 
 const Home = ({ products }) => console.log('products', products) || (
-<Fragment>
+<Wrapper>
   <TopBar>
-    <ShopTitle href="#home">MINHA LOJA</ShopTitle>
-    <Categories href="#perfumaria">PERFUMARIA</Categories>
-    <Categories href="#maquiagem">MAQUIAGEM</Categories>
-    <Categories href="#cabelo">CABELOS</Categories>
-    <Categories href="#infantil">INFANTIL</Categories>
+    <ShopTitle href="#home">{HOME.topbar.store}</ShopTitle>
+    <Categories href="#perfumaria">{HOME.topbar.perfumery}</Categories>
+    <Categories href="#maquiagem">{HOME.topbar.makeUp}</Categories>
+    <Categories href="#cabelo">{HOME.topbar.hair}</Categories>
+    <Categories href="#infantil">{HOME.topbar.child}</Categories>
   </TopBar>
-</Fragment>
+  <BodyTitle>{HOME.body.title}</BodyTitle>
+</Wrapper>
 )
 
 export default enhancer(Home)
