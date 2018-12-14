@@ -130,6 +130,7 @@ export const ProductCard = styled.div`
   margin: 12px 18px;
   display: inline-flex;
   flex-flow: column;
+  cursor: pointer;
 
   &:hover {
     border: 4px solid #E8E6E6;

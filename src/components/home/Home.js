@@ -24,7 +24,7 @@ const enhancer = compose(
   }),
 )
 
-const Home = ({ products }) => console.log('products', products) || (
+const Home = ({ products }) => (
 <Wrapper>
   <HeaderWrapper>
     <TopBar>

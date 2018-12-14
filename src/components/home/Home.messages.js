@@ -10,16 +10,3 @@ export const HOME = {
     title: 'ÚLTIMOS PRODUTOS'
   }
 }
-
-export const MASKED = {
-  topbar: {
-    store: 'AAAAAAAA',
-    perfumery: 'BBBBBBB',
-    makeUp: 'CCCCCC',
-    hair: 'DDDDDDD',
-    child: 'EEEEEEE'
-  },
-  body: {
-    title: 'FFFFFFF'
-  }
-}
