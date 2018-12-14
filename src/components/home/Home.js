@@ -8,7 +8,7 @@ import {
   withState
 } from 'recompose'
 import axios from 'axios'
-import { Wrapper, HeaderWrapper, TopBar, Categories, CartImage, CartWrapper, ShopTitle, BodyTitle, BorderDiv, TitleWrapper, ProductCard, BodyWrapper, ProductImage, ProductName, ProductValue, ContentWrapper } from './Home.style'
+import { Wrapper, HeaderWrapper, TopBar, Categories, CartImage, CartValue, CartWrapper, ShopTitle, BodyTitle, BorderDiv, TitleWrapper, ProductCard, BodyWrapper, ProductImage, ProductName, ProductValue, ContentWrapper } from './Home.style'
 import cart from '../../assets/cart.png'
 import { HOME } from './Home.messages'
 
@@ -33,7 +33,10 @@ const Home = ({ products }) => console.log('products', products) || (
       <Categories href="#maquiagem">{HOME.topbar.makeUp}</Categories>
       <Categories href="#cabelo">{HOME.topbar.hair}</Categories>
       <Categories href="#infantil">{HOME.topbar.child}</Categories>
-      <CartWrapper><CartImage src={cart} width={28} height={25} /></CartWrapper>
+      <CartWrapper>
+        <CartImage src={cart} />
+        <CartValue>R$ 00,00</CartValue>
+      </CartWrapper>
     </TopBar>
   </HeaderWrapper>
   <ContentWrapper>
