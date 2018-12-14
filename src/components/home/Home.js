@@ -8,8 +8,8 @@ import {
   withState
 } from 'recompose'
 import axios from 'axios'
-import { Wrapper, TopBar, Categories, ShopTitle, BodyTitle } from './Home.style'
-import { MASKED as HOME } from './Home.messages'
+import { Wrapper, TopBar, Categories, ShopTitle, BodyTitle, BorderDiv, TitleWrapper, ProductCard, BodyWrapper, ProductImage, ProductName, ProductValue } from './Home.style'
+import { HOME } from './Home.messages'
 
 const URL = "products.json"
 
@@ -32,7 +32,20 @@ const Home = ({ products }) => console.log('products', products) || (
     <Categories href="#cabelo">{HOME.topbar.hair}</Categories>
     <Categories href="#infantil">{HOME.topbar.child}</Categories>
   </TopBar>
-  <BodyTitle>{HOME.body.title}</BodyTitle>
+  <TitleWrapper>
+    <BorderDiv />
+    <BodyTitle>{HOME.body.title}</BodyTitle>
+    <BorderDiv />
+  </TitleWrapper>
+  <BodyWrapper>
+    {products.map(product => (
+      <ProductCard>
+        <ProductImage src={product.images[0].imageUrl} />
+        <ProductName>{product.name}</ProductName>
+        <ProductValue>R$ {product.Value}</ProductValue>
+      </ProductCard>
+    ))}
+  </BodyWrapper>
 </Wrapper>
 )
 

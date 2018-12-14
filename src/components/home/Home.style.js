@@ -7,17 +7,17 @@ export const Wrapper = styled.div`
 export const TopBar = styled.div`
   overflow: hidden;
   background-color: #FCFCFC;
-  border-bottom: #EBEBEB solid;
+  border-bottom: #ECECEC solid 1px;
   padding-top: 24px;
   padding-bottom: 24px;
 `
 
 export const ShopTitle = styled.a`
   font-size: 20px;
-  border-right: #EBEBEB solid;
+  border-right: #ECECEC solid 1px;
   padding: 12px 24px;
   text-decoration: none;
-  color: black;
+  color: #666363;
   font-weight: bold;
 `
 
@@ -25,21 +25,61 @@ export const Categories = styled.a`
   font-size: 18px;
   text-decoration: none;
   padding: 24px;
-  color: grey;
+  color: #808080;
+`
+
+export const TitleWrapper = styled.div`
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 36px;
+  margin-bottom: 42px;
 `
 
 export const BodyTitle = styled.div`
   font-size: 20px;
-  display: block;
+  display: inline-block;
   text-align: center;
   max-width: 500px;
-  margin: 24px auto;
-  color: grey;
+  color: #666363;
+`
 
-  ::before {
-    border-top: 1px solid;
-    content: ""; /* This is necessary for the pseudo element to work. */ 
-    display: block; /* This will put the pseudo element on its own line. */
-    width: 50%; /* Change this to whatever width you want. */
-  }
+export const BorderDiv = styled.div`
+  border-top: solid #F5F5F5 1px;
+  width: 180px;
+  height: 22px;
+  display: inline-block;
+`
+
+export const BodyWrapper = styled.div`
+  display: flex;
+  flex-flow: wrap;
+`
+
+export const ProductCard = styled.div`
+  width: 300px;
+  height: 370px;
+  border: 4px solid #F8F6F6;
+  margin: 12px 18px;
+  display: inline-flex;
+  flex-flow: column;
+`
+
+export const ProductImage = styled.img`
+  width: 260px;
+  height: 280px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+`
+
+export const ProductName = styled.div`
+  text-align: center;
+`
+
+export const ProductValue = styled.div`
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 32px;
+  height: 18px;
 `
